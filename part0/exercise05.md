@@ -6,7 +6,7 @@ sequenceDiagram
     participant Browser
     participant Server
 
-    User->>Browser: Open the browser and visit the SPA page
+    User->>Browser: Open the browser and visit the SPA notes page
     Browser->>Server: Request Files
     Browser->>Server: Request the HTML file
     Browser->>Server: Request the CSS file
