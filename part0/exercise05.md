@@ -7,13 +7,8 @@ sequenceDiagram
     participant Server
 
     User->>Browser: Open the browser and visit the SPA notes page
-    Browser->>Server: Request Files
-    Browser->>Server: Request the HTML file
-    Browser->>Server: Request the CSS file
-    Browser->>Server: Request the JavaScript file
+    Browser->>Server: Request initial files (HTML, CSS, JavaScript)
     Browser->>Browser: Web page loading
-    Server-->>Browser: Server sends the HTML file
-    Server-->>Browser: Server sends the CSS file
-    Server-->>Browser: Server sends the JavaScript file
+    Server-->>Browser: Server sends the HTML files (HTML, CSS, JavaScript)
     Browser-->>User: Show the page to the user
 ```
